@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/spacex">
+    <Resource
+        type="javax.sql.DataSource"
+        auth="Container"
+        name="jdbc/spacex"
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/spacex"
+        username="root"
+        password="root"
+        
+        maxActive="100"
+        masIdle="30"
+        maxWait="10000"
+        validationQuery="Select 1 from dual"
+        />
+    </Context>
